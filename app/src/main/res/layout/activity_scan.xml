@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/activity_main_buttons_horizontal_margin"
+        android:paddingRight="@dimen/activity_main_buttons_horizontal_margin"
+        android:paddingTop="@dimen/activity_main_buttons_vertical_margin"
+        android:paddingBottom="@dimen/activity_main_buttons_vertical_margin"
+        android:id="@+id/rlScan"
+        android:layout_above="@id/tvCopyright"
+        >
+
+        <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+            android:id="@+id/qrdecoderview"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btnEnterQRManual"
+
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/btn_title_enter_manually"
+            android:id="@+id/btnEnterQRManual"
+
+            android:onClick="onEnterQRManual"
+            android:layout_alignParentBottom="true"
+
+            />
+
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2015 WOG copyright"
+        android:id="@+id/tvCopyright"
+        android:background="@drawable/copyright_background"
+
+        android:gravity="center"
+        android:textColor="@color/White"
+
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:onClick="doEmulate" />
+
+
+</RelativeLayout>
+
+
+

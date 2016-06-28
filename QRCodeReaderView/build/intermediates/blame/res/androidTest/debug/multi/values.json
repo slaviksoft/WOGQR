@@ -1,0 +1,106 @@
+[
+    {
+        "outputFile": "C:\\Dropbox\\Android\\AndroidStudio\\WOGQR\\QRCodeReaderView\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 42,
+                    "endOffset": 93
+                },
+                "from": {
+                    "file": "C:\\Dropbox\\Android\\AndroidStudio\\WOGQR\\QRCodeReaderView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 42,
+                        "endOffset": 93
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 98,
+                    "endColumn": 52,
+                    "endOffset": 146
+                },
+                "from": {
+                    "file": "C:\\Dropbox\\Android\\AndroidStudio\\WOGQR\\QRCodeReaderView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 98,
+                        "endColumn": 52,
+                        "endOffset": 146
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 151,
+                    "endColumn": 50,
+                    "endOffset": 197
+                },
+                "from": {
+                    "file": "C:\\Dropbox\\Android\\AndroidStudio\\WOGQR\\QRCodeReaderView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 50,
+                        "endOffset": 197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 202,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 488
+                },
+                "from": {
+                    "file": "C:\\Dropbox\\Android\\AndroidStudio\\WOGQR\\QRCodeReaderView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 202,
+                        "endLine": 11,
+                        "endColumn": 12,
+                        "endOffset": 488
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 493,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 648
+                },
+                "from": {
+                    "file": "C:\\Dropbox\\Android\\AndroidStudio\\WOGQR\\QRCodeReaderView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 493,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 648
+                    }
+                }
+            }
+        ]
+    }
+]

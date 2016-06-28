@@ -1,0 +1,79 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_main_buttons_height"
+            android:text="@string/btn_scan"
+            android:id="@+id/btnScan"
+            android:layout_weight="10"
+            android:onClick="onScanClick"
+
+            android:layout_marginLeft="@dimen/activity_main_buttons_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_main_buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_main_buttons_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_main_buttons_vertical_margin"
+
+            android:background="@drawable/button_shape"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_main_buttons_height"
+            android:text="@string/btn_Balance"
+            android:id="@+id/btnBalance"
+            android:layout_weight="10"
+            android:onClick="onBalanceClick"
+            android:layout_marginLeft="@dimen/activity_main_buttons_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_main_buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_main_buttons_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_main_buttons_vertical_margin"
+            android:background="@drawable/button_shape"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_main_buttons_height"
+            android:text="@string/btn_cabinet"
+            android:id="@+id/btnCabinet"
+
+            android:onClick="onCabinetClick"
+            android:layout_marginLeft="@dimen/activity_main_buttons_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_main_buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_main_buttons_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_main_buttons_vertical_margin"
+            android:background="@drawable/button_shape"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_copyright"
+        android:id="@+id/tvCopyright"
+        android:background="@drawable/copyright_background"
+
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:layout_alignParentBottom="true"
+        android:onClick="onTestClick"
+        />
+
+</RelativeLayout>

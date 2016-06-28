@@ -1,0 +1,355 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.wog.wogqr.OrderBonusesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvCopyright"
+        android:background="@drawable/panel1"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        >
+
+        <!--Good-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llGood"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/label_goodname"
+                android:id="@+id/tvLabelGoodName"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Бензин А-95"
+                android:id="@+id/tvGoodName"
+                android:textColor="@color/green1"
+                android:gravity="center_horizontal"
+                android:layout_weight="@integer/weight_col23"
+                android:background="@drawable/border"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:ellipsize="start"
+                />
+
+        </LinearLayout>
+
+        <!--Price-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llPrice"
+            android:layout_below="@id/llGood"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/label_price"
+                android:id="@+id/tvLabelPrice"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="21.99"
+                android:id="@+id/tvPrice"
+                android:textColor="@color/green1"
+                android:gravity="center_horizontal"
+                android:layout_weight="@integer/weight_col2"
+                android:background="@drawable/border"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="грн/л"
+                android:gravity="center_horizontal"
+                android:id="@+id/tvLabelPriceCurrency"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col3"
+                />
+
+
+        </LinearLayout>
+
+        <!--Bonuses-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llBonuses"
+            android:layout_below="@id/llPrice"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/label_bonuses_balance"
+                android:id="@+id/tvLabelBonuses"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="123.00"
+                android:id="@+id/tvBonusesBalance"
+                android:textColor="@color/green1"
+                android:gravity="center_horizontal"
+                android:layout_weight="@integer/weight_col2"
+                android:background="@drawable/border"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="грн"
+                android:id="@+id/tvLabelCurrency"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col3"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!--Possible-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llPossibleCount"
+            android:layout_below="@id/llBonuses"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/label_available"
+                android:id="@+id/tvLabelPossibleCount"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="7.00"
+                android:id="@+id/tvPossibleCount"
+                android:textColor="@color/green1"
+                android:gravity="center_horizontal"
+                android:layout_weight="@integer/weight_col2"
+                android:background="@drawable/border"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="л"
+                android:id="@+id/tvLabelCountValue"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col3"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!--Div1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llDiv1"
+            android:layout_below="@id/llPossibleCount"
+            android:background="@drawable/div"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" />
+
+
+        <!--Ordered sum-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llSum"
+            android:layout_below="@id/llDiv1"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/label_ordered"
+                android:id="@+id/tvLabelSum"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.0"
+                android:id="@+id/edSum"
+                android:textColor="@color/green1"
+                android:gravity="center"
+                android:layout_weight="@integer/weight_col2"
+                android:background="@drawable/border_edit"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="грн"
+                android:id="@+id/tvLabelOrderedCurrency"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col3"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+        <!--Ordered count-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llCount"
+            android:layout_below="@id/llSum"
+            android:layout_marginBottom="1dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/tvLabelCount"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.0"
+                android:id="@+id/edCount"
+                android:textColor="@color/green1"
+                android:gravity="center"
+                android:layout_weight="@integer/weight_col2"
+                android:background="@drawable/border_edit"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="л"
+                android:id="@+id/tvLabelOrderedCountCurrency"
+                android:textColor="@color/green1"
+                android:layout_weight="@integer/weight_col3"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <!--Div1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llDiv2"
+                android:background="@drawable/div"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green1"
+                android:text="@string/btn_order_send"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:onClick="onSendClick"
+                android:background="@color/White"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:drawableRight="@drawable/next"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_copyright"
+        android:background="@drawable/copyright_background"
+        android:id="@+id/tvCopyright"
+
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>

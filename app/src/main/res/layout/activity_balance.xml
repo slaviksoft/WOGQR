@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.wog.wogqr.BalanceActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llBalance"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tvCopyright"
+    >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_bonuses_balance"
+            android:id="@+id/tvBonusesLabel"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/tvBonusesBalance"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_below="@id/tvBonusesLabel"
+
+
+            android:editable="false" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="@string/label_wallets_title"
+            android:id="@+id/tvWalletsTitle"
+            android:gravity="center"
+            android:layout_below="@id/tvBonusesBalance"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lvWallets"
+            android:layout_marginTop="5dp"
+            android:choiceMode="singleChoice"
+            android:layout_below="@id/tvWalletsTitle"
+            android:layout_alignParentBottom="true"
+
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_copyright"
+        android:background="@drawable/copyright_background"
+        android:id="@+id/tvCopyright"
+
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

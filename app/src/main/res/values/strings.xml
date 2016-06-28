@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WOG QR</string>
+    <string name="title_activity_request_station_status">Request station status</string>
+    <string name="title_activity_test">Test activity</string>
+    <string name="title_activity_login">Cabinet</string>
+    <string name="title_activity_balance">Balance</string>
+
+    <!-- main -->
+    <string name="btn_cabinet">Cabinet</string>
+    <string name="btn_scan">Scan QR</string>
+    <string name="btn_Balance">Balance</string>
+    <string name="btnTest">Tests</string>
+
+    <!-- cabinet -->
+    <string name="label_email">E-mail</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_card">Card number</string>
+    <string name="label_password">Password</string>
+    <string name="btn_login">Log in</string>
+    <string name="btn_logout">Log out</string>
+
+    <!-- Scan QR -->
+    <string name="tv_scan">Scan QR code …</string>
+
+    <!-- balance -->
+    <string name="label_bonuses_balance">Bonuses</string>
+    <string name="label_wallets_title">Fuel wallet</string>
+    <string name="label_goods_wallets_title">Goods wallet</string>
+    <string name="text_fuel_count_units">l.</string>
+    <string name="text_goods_count_units">pcs.</string>
+
+    <!-- messages -->
+    <string name="msg_no_card">Card not found</string>
+    <string name="msg_wrong_pass">Wrong password</string>
+    <string name="msg_wrong_answer">Wrong answer format from server</string>
+    <string name="msg_http_request">Connecting…</string>
+    <string name="msg_http_request_failed">Connection to server failed</string>
+    <string name="msg_http_request_encryption_failed">Connection failed - error encrypting</string>
+    <string name="msg_wrong_QR">Wrong QR code</string>
+    <string name="msg_operation_canceled">Operation canceled</string>
+    <string name="msg_something_wrong">Something is wrong</string>
+    <string name="msg_wrong_qr">QR code is erroneous</string>
+    <string name="msg_loyalty_server_error">Loyalty server internal error</string>
+
+    <!-- order -->
+    <string name="msg_order_dispenser_malfunction">Dispenser malfunction</string>
+    <string name="msg_order_raise_nozzle">Raise the fuel nozzle</string>
+    <string name="msg_order_dispenser_busy">Dispenser is busy</string>
+    <string name="msg_order_get_balance_error">Getting balance error</string>
+    <string name="msg_order_no_azs_connection">No connection to AZS</string>
+    <string name="msg_order_no_good_code">No good code</string>
+    <string name="btn_order_send">Send order</string>
+    <string name="text_full_tank">Full Tank</string>
+
+    <!-- standard buttons -->
+    <string name="btn_Back">Back</string>
+    <string name="btn_Repeat">Repeat</string>
+
+    <!-- test -->
+    <string name="btnMD5">MD5</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_order_execute">OrderExecuteActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="msg_order_application_server_error">Application server error</string>
+    <string name="msg_order_azs_server_error">AZS server error</string>
+    <string name="msg_order_order_is_executing">Order is executing</string>
+    <string name="msg_order_accepted">Order accepted</string>
+    <string name="btnRefresh">Refresh</string>
+    <string name="msg_order_different_goods">Different goods</string>
+    <string name="msg_order_wrong_uuid">Wrong operation id</string>
+    <string name="msg_order_start_error">Order start error</string>
+    <string name="msg_order_order_is_waiting">Order is waiting for execution</string>
+    <string name="btn_scan_status">Last transaction status</string>
+    <string name="btnOdrerCancel">Cancel</string>
+    <string name="msg_order_insufficient_balance">Insufficient balance</string>
+    <string name="msg_order_no_loyalty_connection">No loyalty server connection</string>
+    <string name="msg_order_time_out">Execution order time out</string>
+    <string name="msg_count_is_wrong">Wrong count</string>
+    <string name="msg_login_need_pin">You need to set pin on your card</string>
+
+
+    <string name="btn_title_enter_manually">Enter manually</string>
+    <string name="text_copyright">2015 WOG copyright</string>
+    <string name="label_goodname">Good</string>
+    <string name="label_available">Available</string>
+    <string name="label_ordered">Ordered</string>
+    <string name="title_activity_pay_selection">Pay select</string>
+    <string name="title_activity_enter_pin">Enter pin</string>
+    <string name="title_activity_enter_qr">EnterQRActivity</string>
+    <string name="label_enter_qr_title">Enter QR</string>
+    <string name="msg_order_wrong_pin">Wrong pin</string>
+    <string name="msg_order_error_azs_data">Error data received from azs</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_repeat">Repeat</string>
+    <string name="title_activity_scanqr">Scan QR</string>
+    <string name="title_activity_order_bonuses">OrderBonusesActivity</string>
+    <string name="label_price">Price</string>
+
+</resources>

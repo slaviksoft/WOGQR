@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WOG QR</string>
+    <string name="title_activity_request_station_status" >Запит статусу АЗК</string>
+    <string name="title_activity_test" >TestActivity</string>
+    <string name="title_activity_login" >Кабінет</string>
+    <string name="title_activity_balance" >Баланс</string>
+
+    <!-- main -->
+    <string name="btn_cabinet">Кабінет</string>
+    <string name="btn_scan">Сканувати QR</string>
+    <string name="btn_Balance">Баланс</string>
+    <string name="btnTest">Тести</string>
+
+    <!-- cabinet -->
+    <string name="label_email">E-mail</string>
+    <string name="label_phone">Телефон</string>
+    <string name="label_card">Номер карти</string>
+    <string name="label_password">Кодове слово</string>
+    <string name="btn_login">Авторизуватись</string>
+    <string name="btn_logout">Відключитись</string>
+
+    <!-- Scan QR -->
+    <string name="tv_scan">Проскануйте QR код …</string>
+
+    <!-- balance -->
+    <string name="label_bonuses_balance">Бонуси</string>
+    <string name="label_wallets_title">Паливний гаманець</string>
+    <string name="label_goods_wallets_title">Товарний гаманець</string>
+    <string name="text_fuel_count_units">л.</string>
+    <string name="text_goods_count_units">шт.</string>
+
+    <!-- messages -->
+    <string name="msg_no_card">Карту не знайдено</string>
+    <string name="msg_wrong_pass">Не правильний пароль</string>
+    <string name="msg_wrong_answer">Не правильний формат відповіді сервера</string>
+    <string name="msg_http_request">З\'єднання…</string>
+    <string name="msg_http_request_failed">Помилка з\'єднання з сервером</string>
+    <string name="msg_wrong_QR">Не правильний QR код</string>
+
+    <!-- test -->
+    <string name="btnMD5">MD5</string>
+    <string name="btn_Back">Назад</string>
+    <string name="title_activity_order">Замовлення</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="msg_operation_canceled">Операцію відмінено</string>
+    <string name="msg_order_dispenser_busy">Колонка зайнята</string>
+    <string name="msg_order_dispenser_malfunction">Помилка роботи колонки</string>
+    <string name="msg_order_raise_nozzle">Підніміть заправний пістолет</string>
+    <string name="msg_something_wrong">Шось пішло не так</string>
+    <string name="msg_wrong_qr">Помилка в QR коді</string>
+    <string name="msg_order_get_balance_error">Помилка отримання балансу</string>
+    <string name="msg_loyalty_server_error">Внутрішня помилка сервера лояльності</string>
+    <string name="btn_Repeat">Повторити</string>
+    <string name="msg_order_no_azs_connection">Немає звязку з АЗК</string>
+    <string name="msg_order_no_good_code">Немає коду товару</string>
+    <string name="msg_http_request_encryption_failed">Помилка з\'єднання - помилка шифрування</string>
+    <string name="btn_order_send">Відіслати замовлення</string>
+    <string name="text_full_tank">Повний бак</string>
+    <string name="msg_order_accepted">Замовлення виконано</string>
+    <string name="msg_order_application_server_error">Помилка сервера застосунку</string>
+    <string name="msg_order_azs_server_error">Помилка сервера АЗК</string>
+    <string name="msg_order_order_is_executing">Замовлення вже виконується</string>
+    <string name="hello_world">Привіт світ!</string>
+    <string name="btnRefresh">Оновити</string>
+    <string name="msg_order_different_goods">Різні товари замовлення та колонки</string>
+    <string name="msg_order_start_error">Помилка старту замовлення</string>
+    <string name="msg_order_wrong_uuid">Помилковий ІД операції</string>
+    <string name="title_activity_order_execute">Виконання замовлення</string>
+    <string name="msg_order_order_is_waiting">Замовлення очікує виконання</string>
+    <string name="btn_scan_status">Статус останньої транзакції</string>
+    <string name="btnOdrerCancel">Відмінити</string>
+    <string name="msg_order_insufficient_balance">Недостатньо залишку на карті</string>
+    <string name="msg_order_no_loyalty_connection">Немає зв\'язку з сервером лояльності</string>
+    <string name="msg_order_time_out">Перевищений інтервал на виконання замовлення</string>
+    <string name="msg_count_is_wrong">Не правильна кількість</string>
+    <string name="msg_login_need_pin">Вам потрібно встановити пін на карту</string>
+    <string name="text_copyright">2015 WOG copyright</string>
+    <string name="btn_title_enter_manually">Ввести вручну</string>
+    <string name="label_available">Доступно</string>
+    <string name="label_goodname">Товар</string>
+    <string name="label_ordered">Замовлено</string>
+    <string name="msg_order_wrong_pin">Помилковий пін</string>
+    <string name="label_cancel">Відмінити</string>
+    <string name="label_repeat">Повторити</string>
+    <string name="title_activity_pay_selection">Форма оплати</string>
+    <string name="label_enter_qr_title">Введення QR</string>
+    <string name="msg_order_error_azs_data">Помилка отримання даних з АЗК</string>
+    <string name="title_activity_enter_pin">Введення піна</string>
+    <string name="title_activity_enter_qr">Введення QR</string>
+    <string name="title_activity_scanqr">Сканування QR</string>
+    <string name="label_price">Ціна</string>
+    <string name="title_activity_order_bonuses">Оплата бонусами</string>
+
+</resources>

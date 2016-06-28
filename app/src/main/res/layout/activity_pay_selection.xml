@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.wog.wogqr.PaySelectionActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/llAccepted"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@id/tvCopyright"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:background="@drawable/panel_background"
+            android:clickable="true"
+            android:onClick="onBonusesPayClick"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Бонуси"
+                android:id="@+id/textView15"
+                android:textColor="#00603F"
+                android:gravity="left"
+                android:layout_toLeftOf="@+id/img1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Списання бонусів в якості оплати за паливо та товари"
+                android:id="@+id/textView16"
+                android:textColor="@color/gray3"
+                android:gravity="left"
+                android:layout_below="@+id/textView15"
+                android:layout_toLeftOf="@+id/img1"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBalanceBonuses"
+                android:layout_below="@id/textView16"
+                android:text="3846 бонусів"
+                android:textColor="@color/green2"
+                android:layout_marginTop="5px"
+                />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_alignParentRight="true"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:background="@drawable/panel_background"
+            android:onClick="onWalletsPayClick"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Паливний гаманець"
+                android:id="@+id/textView25"
+                android:textColor="#00603F"
+                android:gravity="left"
+                android:layout_toLeftOf="@+id/img2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Придбання раніше оплачених через сайт товарів"
+                android:id="@+id/textView26"
+                android:textColor="@color/gray3"
+                android:gravity="left"
+                android:layout_below="@+id/textView25"
+                android:layout_toLeftOf="@+id/img2"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBalanceWallets"
+                android:layout_below="@id/textView26"
+                android:text="Бензин Mustang A-95: 23,30 л."
+                android:textColor="@color/green2"
+                android:layout_marginTop="5px"
+                />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_alignParentRight="true"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:background="@drawable/panel_background"
+            android:onClick="onOnlinePayClick"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Еквайринг"
+                android:id="@+id/textView35"
+                android:textColor="#00603F"
+                android:gravity="left"
+                android:layout_toLeftOf="@+id/img3"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Оплата за допомогою платіжних карток visa/mastercard"
+                android:id="@+id/textView36"
+                android:textColor="@color/gray3"
+                android:gravity="left"
+                android:layout_below="@+id/textView35"
+                android:layout_toLeftOf="@+id/img3"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBalanceOnline"
+                android:layout_below="@id/textView36"
+                android:text="Залишок невідомий"
+                android:textColor="@color/green2"
+                android:layout_marginTop="5px"
+                />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_alignParentRight="true"
+            />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlWarning"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/tvCopyright"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/panel_background"
+            android:layout_above="@+id/llButtons"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="..."
+                android:id="@+id/tvErrorInfo"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/green1"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llButtons"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cancel"
+                android:id="@+id/btnCancel"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_weight="10"
+                android:onClick="onCancelClick"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_repeat"
+                android:id="@+id/btnAccept"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_weight="10"
+                android:onClick="onRepeatClick"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_copyright"
+        android:background="@drawable/copyright_background"
+        android:id="@+id/tvCopyright"
+
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>

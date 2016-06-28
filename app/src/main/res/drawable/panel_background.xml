@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <nine-patch xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/panel_shadow_pressed"/>
+    </item>
+    <item android:state_enabled="false">
+        <nine-patch android:alpha="100" xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/panel_shadow" />
+    </item>
+    <item>
+        <nine-patch xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/panel_shadow" />
+    </item>
+
+</selector>

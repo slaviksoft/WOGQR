@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="weight_col1">10</integer>
+    <integer name="weight_col2">10</integer>
+    <integer name="weight_col3">5</integer>
+    <integer name="weight_col12">20</integer>
+    <integer name="weight_col23">15</integer>
+
+</resources>

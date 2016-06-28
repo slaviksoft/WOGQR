@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activity_background">#ff00a850</color>
+    <color name="activity_text">#ffffea64</color>
+    <color name="button_text">#ff0e0056</color>
+    <color name="text_color_count">#ffececec</color>
+
+
+    <color name="windowBackgroundColor">@color/green1</color>
+
+    <color name="actionBarColor">@color/green2</color>
+    <color name="actionBarTextColor">@color/White</color>
+    <color name="buttonBackgroundColor">@color/Green</color>
+    <color name="buttonBackgroundColorPressed">@color/GreenDark</color>
+
+    <color name="GreenHint">#7a00a000</color>
+    <color name="Green">#ff00a000</color>
+    <color name="GreenLight">#ff00d000</color>
+    <color name="GreenDark">#ff006800</color>
+
+    <color name="GreenAlpha">#5700a000</color>
+
+    <color name="Yellow">#ffffdb6b</color>
+    <color name="White">#ffffffff</color>
+
+    <color name="green1">#FF00603F</color>
+    <color name="green2">#FF00A84F</color>
+    <color name="green3">#FF71bf43</color>
+
+    <color name="yellow1">#FFf6b221</color>
+    <color name="yellow2">#FFFFCD00</color>
+    <color name="yellow3">#40FFCD00</color>
+
+    <color name="gray1">#FF705D50</color>
+    <color name="gray2">#FFE2B282</color>
+    <color name="gray3">#FFD0D0CE</color>
+
+
+</resources>

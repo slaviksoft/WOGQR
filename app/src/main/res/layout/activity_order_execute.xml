@@ -1,0 +1,126 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ua.wog.wogqr.OrderExecuteActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llOrder1"
+        android:layout_weight="10"
+        android:background="@drawable/panel_background"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Номенклатура заказа:"
+            android:id="@+id/tvOrderLabelGoodName"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:textColor="@color/green2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/tvOrderGoodName"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:textColor="@color/green2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llOrder2"
+        android:layout_below="@id/llOrder1"
+        android:layout_weight="10"
+        android:background="@drawable/panel_background"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Заказано:"
+            android:id="@+id/tvOrderLabelOrdered"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:textColor="@color/green2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/tvOrderOrdered"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:textColor="@color/green2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/tvOrderStatus"
+        android:layout_weight="10"
+        android:background="@drawable/panel_background"
+        android:textColor="@color/green2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/btnRefresh"
+            android:id="@+id/btnOrderRefresh"
+            android:layout_weight="10"
+            android:onClick="onOrderRefresh"
+             />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/btn_Back"
+            android:id="@+id/btnOrderBack"
+            android:layout_weight="10"
+            android:onClick="onOrderBack"
+             />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/btnOdrerCancel"
+            android:id="@+id/btnOrderCancel"
+            android:layout_weight="10"
+            android:onClick="onOrderCancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

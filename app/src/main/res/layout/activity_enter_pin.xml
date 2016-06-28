@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ua.wog.wogqr.EnterPinActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIN:"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edDialogPin"
+        android:layout_alignEnd="@+id/edDialogPin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edDialogPin"
+        android:imeOptions="actionDone"
+        android:password="true"
+        android:inputType="number"
+
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/button_padding_vertical"
+        android:layout_alignRight="@+id/button10"
+        android:layout_alignEnd="@+id/button10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/button_padding_horizontal"
+        android:paddingRight="@dimen/button_padding_horizontal"
+        android:layout_marginTop="@dimen/button_padding_vertical"
+        android:text="Отмена"
+        android:id="@+id/button9"
+        android:layout_below="@+id/edDialogPin"
+        android:layout_alignLeft="@+id/edDialogPin"
+        android:layout_alignStart="@+id/edDialogPin"
+        android:onClick="onCancel"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/button_padding_horizontal"
+        android:paddingRight="@dimen/button_padding_horizontal"
+        android:layout_marginTop="@dimen/button_padding_vertical"
+        android:text="Продолжить"
+        android:id="@+id/button10"
+        android:layout_below="@+id/edDialogPin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onContinue"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        />
+
+</RelativeLayout>

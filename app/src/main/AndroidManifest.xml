@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.wog.wogqr">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScanActivity"
+            android:label="@string/title_activity_scanqr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BalanceActivity"
+            android:label="@string/title_activity_balance"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OrderBonusesActivity"
+            android:label="@string/title_activity_order_bonuses"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OrderWalletsActivity"
+            android:label="@string/title_activity_order"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OrderExecuteActivity"
+            android:label="@string/title_activity_order_execute"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PaySelectionActivity"
+            android:label="@string/title_activity_pay_selection"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.wog.wogqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EnterQRActivity"
+            android:label="@string/title_activity_enter_qr"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDialog" />
+        <activity
+            android:name=".EnterPinActivity"
+            android:label="@string/title_activity_enter_pin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDialog" />
+    </application>
+
+</manifest>

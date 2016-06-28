@@ -1,0 +1,317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.wog.wogqr.OrderWalletsActivity"
+    android:id="@+id/rlMain">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_above="@+id/tvCopyright"
+        tools:context="ua.wog.wogqr.OrderWalletsActivity"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/llWarning"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvMessage"
+                android:gravity="center"
+                android:layout_above="@+id/llPreorderErrMessageButtons"
+                android:layout_alignParentTop="true"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/llPreorderErrMessageButtons"
+                android:layout_alignParentBottom="true"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn_Back"
+                    android:id="@+id/btnPreOrderBack"
+                    android:layout_weight="50"
+                    android:onClick="onBackClick"
+                    android:layout_marginRight="@dimen/button_padding_horizontal" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn_Repeat"
+                    android:id="@+id/btnPreOrderRefresh"
+                    android:layout_weight="50"
+                    android:onClick="onRepeatClick"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/llPreOrder"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llPreOrder1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_goodname"
+                    android:id="@+id/tvPreOrderLabelGoodName"
+                    android:layout_weight="10"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|left"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Medium Text"
+                    android:id="@+id/tvPreOrderGoodName"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="10"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llPreOrder2"
+                android:layout_below="@+id/llPreOrder1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_available"
+                    android:id="@+id/tvPreOrderLabelAvailable"
+                    android:layout_weight="10"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|left" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Medium Text"
+                    android:id="@+id/tvPreOrderAvailable"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="10"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llPreOrder3"
+                android:layout_below="@id/llPreOrder2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/label_ordered"
+                    android:id="@+id/tvPreOrderLabelOrdered"
+                    android:layout_weight="10"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|left" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edPreOrderOrdered"
+                    android:layout_gravity="center"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="10"
+                    android:text="0.0"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                     />
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:measureWithLargestChild="false"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/llPreOrder3"
+                android:layout_above="@+id/btnPreOrderSend"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="5"
+                        android:id="@+id/btnPreOrderCalc01"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:tag="5"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="10"
+                        android:id="@+id/btnPreOrderCalc02"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="15"
+                        android:id="@+id/btnPreOrderCalc03"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="20"
+                        android:id="@+id/btnPreOrderCalc04"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="25"
+                        android:id="@+id/btnPreOrderCalc05"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="30"
+                        android:id="@+id/btnPreOrderCalc06"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="40"
+                        android:id="@+id/btnPreOrderCalc07"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="50"
+                        android:id="@+id/btnPreOrderCalc08"
+                        android:layout_weight="10"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/btnPreOrderCalc09"
+                        android:layout_weight="10"
+                        android:text="@string/text_full_tank"
+                        android:onClick="onCalcClick"
+                        android:layout_margin="@dimen/button_calc_margin" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_order_send"
+                android:id="@+id/btnPreOrderSend"
+                android:layout_marginTop="20dp"
+
+                android:onClick="onSendClick"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_copyright"
+        android:background="@drawable/copyright_background"
+        android:id="@+id/tvCopyright"
+
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

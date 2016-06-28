@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.OrderWalletsActivity"/>
+      <point      
+        x = "4964"      
+        y = "1608"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.TestActivity"/>
+      <point      
+        x = "2864"      
+        y = "1648"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.ScanActivity"/>
+      <point      
+        x = "2160"      
+        y = "128"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.EnterPinActivity"/>
+      <point      
+        x = "524"      
+        y = "1732"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.OrderExecuteActivity"/>
+      <point      
+        x = "3304"      
+        y = "-144"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.OrderBonusesActivity"/>
+      <point      
+        x = "120"      
+        y = "176"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.BalanceActivity"/>
+      <point      
+        x = "4248"      
+        y = "224"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.PaySelectionActivity"/>
+      <point      
+        x = "1708"      
+        y = "1612"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.EnterQRActivity"/>
+      <point      
+        x = "1904"      
+        y = "2880"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.MainActivity"/>
+      <point      
+        x = "4024"      
+        y = "2940"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.wog.wogqr.LoginActivity"/>
+      <point      
+        x = "1092"      
+        y = "240"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
